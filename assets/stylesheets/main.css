@@ -38,8 +38,7 @@ nav a {
 }
 
 .cover-photo {
-  display: flex;
-  justify-content: center; /* Center the cover photo horizontally */
+  text-align: center; /* Center the cover photo */
 }
 
 .cover-photo img {
@@ -65,6 +64,44 @@ nav a {
   border-radius: 50%;
 }
 
+/* Updated styles for blog posts */
+.blog-post {
+  text-align: center;
+  margin: 20px auto; /* Added margin to provide separation between blog posts */
+  position: relative;
+}
+
+.blog-post h2 {
+  padding-top: 10px;
+}
+
+.blog-content {
+  display: none;
+  margin-top: 10px; /* Added margin to create separation between arrow and content */
+  padding: 10px; /* Added padding to the content area for better readability */
+}
+
+.blog-content.visible {
+  display: block;
+}
+
+.dropdown-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333; /* Changed border-bottom to border-top */
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* Add styles for the dropdown caption */
+.dropdown-caption {
+  font-size: 12px;
+  color: #666;
+  padding-bottom: 8px; /* Added padding to create separation below the text */
+}
+
 /* Mobile-friendly styles */
 @media screen and (max-width: 600px) {
   .logo img {
@@ -78,6 +115,14 @@ nav a {
   nav li {
     display: block;
     margin: 10px 0;
+  }
+
+  .cover-photo img {
+    max-width: 100%;
+  }
+
+  .team-bios {
+    flex-wrap: wrap;
   }
 
   .team-member {

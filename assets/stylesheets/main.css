@@ -1,14 +1,19 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 20px;
   padding: 0;
 }
+
 
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
+}
+
+footer{
+  padding: 20px;
 }
 
 .logo img {
@@ -100,6 +105,21 @@ nav a {
   font-size: 12px;
   color: #666;
   padding-bottom: 8px; /* Added padding to create separation below the text */
+}
+
+/* About Page*/
+.about-us-content{
+  padding: 0 20px;
+}
+
+/* Updated styles for the logo */
+.ablogo {
+  text-align: center;
+  margin-bottom: 20px; /* Add some spacing between the logo and the content */
+}
+
+.ablogo img {
+  max-width: 500px; /* Set the maximum width for the logo to 200px (adjust as needed) */
 }
 
 /* Mobile-friendly styles */
